@@ -168,13 +168,19 @@ header{
     border-bottom: 1px solid #d8d9db;
     box-shadow: 0 1px 0 #d8d9db; 
     top: 73px;
-    height: 60;
+    height: 60px;
     z-index: 4;
 }
 .section9{
     width: 100%;
     min-width: 100%;
     max-width: 100%;
+    height: 400px;
+}
+.section9 video{
+    object-fit: cover;
+    height: inherit;
+    transform: scale(1.005);
 }
 .nav{
     position: absolute;
@@ -684,7 +690,7 @@ header{
 }
 .learn{
     padding-top: 16px;
-
+   display: inline-flex;
 }
 .learn a{
     height: 16px;
@@ -756,6 +762,7 @@ header{
     color: #fff;
     letter-spacing: .01em;
     margin-bottom: 8px;
+    line-height: 37.4px;
 }
 .section8-content p{
     font-family:"Roboto Flex";
@@ -812,12 +819,28 @@ footer a{
     display: inline-flex
 }
 footer .footer-content{
-    padding-top:32px
+    padding-top:32px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 24px;
 }
 footer .footer-content1{
     padding-top:32px;
     padding-bottom: 96px;
     border-top:2px solid #e5e7eb;
+    grid-column: span 4/ span 4;
+}
+footer .sub-content0{
+    display: none;
+}
+footer .sub-content1{
+    grid-column: span 2/ span 2;
+}
+ footer .sub-content3{
+    grid-column: span 4/span 4;
+ }
+footer .sub-content2{
+    grid-column: span 2/ span 2;
 }
 footer .footer-content1 p{
     margin-bottom: 24px;
@@ -849,6 +872,7 @@ footer .footer-content2{
  .sub-content1{
     border-top: 1px solid #bbb;
     padding-top: 32px;
+    padding-bottom: 96px;
 }
  .sub-content2{
     border-top: 1px solid #bbb;
@@ -971,6 +995,10 @@ footer .footer-content2{
     display: flex;
     flex-direction: row;
     gap: 16px;
+    line-height: 1rem;
+}
+.footer-content4 li{
+    margin-bottom: 6px;
 }
 .footer-content5 ul li{
     list-style-type: none;
@@ -1158,6 +1186,15 @@ padding: 96px 48px;
     padding-right: 48px;
     padding-top: 30px;
 }
+.main{
+    background-image: url("images/snapdragon-overview-mobile\ \(1\).webp");
+}
+footer .sub-content1 {
+    grid-column: span 1/span 1;
+}
+footer .sub-content3{
+    grid-column: span 2/ span 2;
+}
 .section10 p{
     font-size: 12px;
     line-height: 14.4px;
@@ -1175,6 +1212,10 @@ footer .footer-content1 a{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.section7 .section7-head h1{
+    font-size: 32px;
+    font-weight: 34px;
 }
 .footer-content5{
     display: flex;
@@ -1490,7 +1531,9 @@ footer .footer-content1 a{
     font-family: "Roboto Flex";
     white-space: nowrap;
     padding:0 20px;
-    padding-bottom: 4px;
+    display: flex;
+    align-items: center;
+    border-bottom:  4px solid transparent;
 
 }
     .overview-2 ul li a{
@@ -1676,7 +1719,7 @@ footer .footer-content1 a{
     }
     .top-nav{
         padding: 24px 130px;
-        padding-right: ;
+
     }
   
     .section{
@@ -1905,6 +1948,20 @@ footer .footer-content1 a{
            .menu{
               margin: 0 2px;
            }
+           .nav-bottom .image{
+                border-bottom:4px solid transparent;
+           }
+        .nav-bottom .over-view {
+            background: rgba(202,209,219,0.18);
+        }
+        .nav-bottom .over-view span{
+            padding: 0;
+            display: inline-block;
+            line-height: 20px;
+            max-height: 65px;
+        }
+
+        
      
 }
 @media screen and (min-width: 1900px){

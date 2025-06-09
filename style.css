@@ -915,6 +915,10 @@ footer .footer-content2{
     font-weight: 520;
     font-variation-settings: "wdth" 114,"GRAD" 0,"slnt" 0,"XTRA" 468,"XOPQ" 96,"YOPQ" 79,"YTLC" 514,"YTUC" 712,"YTAS" 750,"YTDE" -203,"YTFI" 738;
 }
+.section4{
+    height: 800px;
+    position: relative;
+}
 
  .sub-content3 p{
     color: #717171;
@@ -1045,6 +1049,7 @@ footer .footer-content2{
    }
    .main .content{
     padding-top: 96px;
+    padding-bottom: 480px;
    }
     .top-nav{
     padding-left: 48px;
@@ -1264,6 +1269,10 @@ footer .footer-content1 a{
     }
     .footer-content4 ul li:nth-child(3){
      margin-right: 0;
+    }
+    .section4 video{
+        height: inherit;
+        object-fit: cover;
     }
 
 }
